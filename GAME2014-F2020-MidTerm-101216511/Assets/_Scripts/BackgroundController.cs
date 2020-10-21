@@ -30,6 +30,7 @@ public class BackgroundController : MonoBehaviour
         transform.position = new Vector3(verticalBoundary, 0.0f);
     }
 
+    // Move toward leftside from the rightside
     private void _Move()
     {
         transform.position -= new Vector3(verticalSpeed, 0.0f) * Time.deltaTime;
@@ -37,7 +38,7 @@ public class BackgroundController : MonoBehaviour
 
     private void _CheckBounds()
     {
-        // if the background is lower than the bottom of the screen then reset
+        // if the background's right side is completely out of the screen then reset
         if (transform.position.x <= -verticalBoundary)
         {
             _Reset();

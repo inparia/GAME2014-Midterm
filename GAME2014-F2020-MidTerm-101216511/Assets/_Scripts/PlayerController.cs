@@ -108,13 +108,13 @@ public class PlayerController : MonoBehaviour
 
     private void _CheckBounds()
     {
-        // check right bounds
+        // check up bounds and player cannot go over the given boundary
         if (transform.position.y >= horizontalBoundary)
         {
             transform.position = new Vector3(transform.position.x, horizontalBoundary,  0.0f);
         }
 
-        // check left bounds
+        // check down bounds and player cannot go over the given boundary
         if (transform.position.y <= -horizontalBoundary)
         {
             transform.position = new Vector3(transform.position.x, -horizontalBoundary, 0.0f);

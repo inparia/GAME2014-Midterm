@@ -32,11 +32,13 @@ public class BulletController : MonoBehaviour, IApplyDamage
         _CheckBounds();
     }
 
+    // Either move towards right from the player
     private void _Move()
     {
         transform.position += new Vector3(verticalSpeed, 0.0f, 0.0f) * Time.deltaTime;
     }
 
+    // Resets the bullet once it reaches the given boundary
     private void _CheckBounds()
     {
         if (transform.position.x > verticalBoundary + 10)
@@ -45,6 +47,7 @@ public class BulletController : MonoBehaviour, IApplyDamage
         }
     }
 
+    // Resets the bullet once it touches the enemy
     public void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log(other.gameObject.name);
