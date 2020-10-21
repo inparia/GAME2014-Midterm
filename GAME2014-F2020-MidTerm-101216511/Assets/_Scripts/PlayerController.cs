@@ -1,11 +1,18 @@
-﻿using System.Collections;
+﻿/*
+ * PlayerController.cs
+ * Joon Young Sun
+ * 101216511
+ * 2020-10-21
+ * Controls Player Movement
+ * Revision:
+ * Changed it's movement from horizontal to vertical
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -28,7 +35,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Screen.orientation = ScreenOrientation.Landscape;
         m_touchesEnded = new Vector3();
         m_rigidBody = GetComponent<Rigidbody2D>();
     }

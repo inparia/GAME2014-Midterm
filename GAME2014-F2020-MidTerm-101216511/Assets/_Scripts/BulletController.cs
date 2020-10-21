@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * BulletController.cs
+ * Joon Young Sun
+ * 101216511
+ * 2020-10-21
+ * Controls Bullet Movement
+ * Revision:
+ * Changed it's movement from vertical to horizontal
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

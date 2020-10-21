@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * BackgroundController.cs
+ * Joon Young Sun
+ * 101216511
+ * 2020-10-21
+ * Controls Background Movement
+ * Revision:
+ * Changed it's movement from right to left
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
